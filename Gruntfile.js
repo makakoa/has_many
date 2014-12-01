@@ -6,7 +6,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     jshint: {
       options: {
-          node: true
+        node: true
       },
       src: ['models/**/*.js', 'server.js', 'routes/**/*.js']
     },
@@ -14,7 +14,7 @@ module.exports = function(grunt) {
     jscs: {
       src: ['model/**/*.js', 'server.js', 'routes/**/*.js'],
       options: {
-          config: '.jscsrc'
+        config: '.jscsrc'
       }
     }
   });

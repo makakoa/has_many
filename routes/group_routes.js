@@ -22,9 +22,9 @@ module.exports = function(app) {
   app.post('/api/groups', function(req, res) {
     var group = new Group(req.body);
     group.save(function(err, data) {
-        if (err) return res.status(500).send('error');
-        res.json(data);
-      });
+      if (err) return res.status(500).send('error');
+      res.json(data);
+    });
   });
 
   app.delete('/api/notes/:name', function(req, res)  {
